@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<title>Fisch mit oder ohne Zähne?</title>
+<style>
+  @font-face {
+    font-family: 'Minecraftia';
+    src: url('https://fonts.cdnfonts.com/s/7003/Minecraftia-Regular.woff') format('woff');
+  }
+
+  body {
+    background: #111;
+    color: #fff;
+    font-family: 'Minecraftia', Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+  }
+  .question {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  img {
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .options button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    font-family: 'Minecraftia', Arial, sans-serif;
+  }
+  .options button:hover {
+    background: #555;
+  }
+</style>
+</head>
+<body>
+  <div class="question">Fisch mit oder ohne Zähne?</div>
+
+  <img id="mainImage" src="fisch.png" alt="Fisch" />
+
+  <div class="options">
+    <button onclick="showWith()">Mit</button>
+    <button onclick="showWithout()">Ohne</button>
+  </div>
+
+  <script>
+    function showWith() {
+      document.getElementById('mainImage').src = 'mittel.png';
+    }
+    function showWithout() {
+      document.getElementById('mainImage').src = 'jeremy.png';
+    }
+  </script>
+</body>
+</html>
