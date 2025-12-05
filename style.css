@@ -6,3 +6,46 @@ body {
     background-color: #ffffff; /* Hintergrundfarbe (optional) */
     height: 100vh;             /* sorgt dafür, dass body volle Höhe hat */
 }
+body {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Bild neben dem H1, aber kleiner auf Handy */
+.header img {
+    width: 40px;
+}
+
+/* Überschriften */
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+/* Listen */
+ul {
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: lightblue;
+}
+
+/* 📱 Responsiv: Auf Handys werden Bild + H1 untereinander angeordnet */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img {
+        width: 60px; /* darf ruhig größer sein auf Handy */
+    }
+}
