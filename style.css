@@ -5,12 +5,6 @@ body {
     background-size: contain;  /* passt das Bild an den Bildschirm an */
     background-color: #ffffff; /* Hintergrundfarbe (optional) */
     height: 100vh;             /* sorgt dafür, dass body volle Höhe hat */
-}
-body {
-    font-family: Arial, sans-serif;
-    padding: 15px;
-    line-height: 1.5;
-}
 
 .header {
     display: flex;
