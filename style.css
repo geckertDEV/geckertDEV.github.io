@@ -1,0 +1,8 @@
+body {
+    background-image: url("unold.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  /* passt das Bild an den Bildschirm an */
+    background-color: #ffffff; /* Hintergrundfarbe (optional) */
+    height: 100vh;             /* sorgt dafür, dass body volle Höhe hat */
+}
